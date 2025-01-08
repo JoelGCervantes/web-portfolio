@@ -8,8 +8,8 @@ body{
 }
 
 header{
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     background-size: 100%;
     background-position: 50% 72%;
     background-repeat: no-repeat;
@@ -19,7 +19,7 @@ header{
 }
 
 header a{
-    color: black;
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
     transition-duration: 0.4s;
@@ -53,6 +53,21 @@ nav li:last-child{
     background-position: 50% 80%;
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 800px;
+    height: 775px; 
     
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.features figure{
+    margin: auto;
+    width: 200px;
+}
+.features figure img{
+    border-radius: 50%;
+    border: 5px solid #6a7f10;
+    height: 350px;
+    width: 350px;
+
 }
