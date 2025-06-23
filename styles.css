@@ -1,4 +1,15 @@
+@font-face {
+    src: url(fonts/DMSans-VariableFont_opsz\,wght.ttf);
+    font-family: "DM Sans";
+}
+
+@font-face {
+    src: url(fonts/Inter-VariableFont_opsz\,wght.ttf);
+    font-family: NewInter;
+}
+
 * {
+    font-family: NewInter, 'Courier New', Courier, monospace;
     box-sizing: border-box;
     list-style-type: none;
     margin: 0;
@@ -17,7 +28,7 @@ header {
 
 .nav {
     text-align: center;
-    background-color: #6d8d24;
+    background-color: #6a7f10;
     padding: 20px;
 }
 
@@ -30,6 +41,7 @@ li {
 }
 
 li a {
+    text-transform: uppercase;
     text-decoration: none;
     color: white;
 }
@@ -48,9 +60,10 @@ li a:hover {
 }
 
 .main-content-border {
-    border: 2px solid #6d8d24;
+    border: 2px solid #6a7f10;
     border-radius: 5px;
     margin: 10px;
+    margin-bottom: 20vh;
 }
 
 .bio {
@@ -59,7 +72,7 @@ li a:hover {
 }
 
 h1 {
-    color: #6d8d24;
+    color: #6a7f10;
 }
 
 .socials {
@@ -94,7 +107,6 @@ h1 {
 .about {
     margin-left: 52.5px;
     margin-right: 52.5px;
-    padding: 5px;
 }
 
 .about h3 {
@@ -123,4 +135,68 @@ h1 {
 
 .skills #soft-skills {
     background-color: darkgray;
+}
+
+.projects h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5em;
+    color: #213921;
+    margin-bottom: 40px;
+}
+
+.container {
+    display: flex;
+    height: 90vh;
+    margin-left: 64.5px;
+    margin-right: 64.5px;
+}
+
+.box {
+    max-height: 500px;
+    width: 50%;
+}
+
+#box1 {
+    background-color: #6a7f10;
+    color: white;
+    padding: 50px;
+}
+
+
+#project-name {
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1.5px solid black;
+}
+
+#project-bio {
+    max-width: 85%;
+    padding-bottom: 40px;
+}
+
+#box1 p {
+    padding-bottom: 50px;
+}
+
+#box1 button {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#box1 button:hover {
+    background-color: #6a7f10;
+    color: white;
+    border: 1px solid white;
+    text-decoration: underline;
+}
+
+#box2 {
+    width: 75%;
 }
